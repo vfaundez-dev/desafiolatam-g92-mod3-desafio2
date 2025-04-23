@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desafio 2 - Javascript - Agregar/Quitar Borde</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+    }
+
+    img {
+      width: 600px;
+      height: auto;
+    }
+
+    #btnChangeStyle {
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      font-size: 16px;
+      border-radius: 5px;
+      margin: 20px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Agregar / Quitar Borde a Imagen</h1>
+
+    <img
+      id="imgChangeStyle"
+      src="https://cdn.autonomous.ai/static/upload/images/common/upload/20200930/6f2cce37d2c.jpg"
+      alt="Imagen de ejemplo"
+    >
+
+    <button id="btnChangeStyle"> Agregar Borde </button>
+  </div>
+  
+  <script src="./imagen_borde.js"></script>
+</body>
+</html>
