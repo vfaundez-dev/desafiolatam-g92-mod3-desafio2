@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desafio 2 - Javascript - Contar Stickers</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+    }
+
+    h1 {
+      font-weight: 700;
+      margin-bottom: 0;
+    }
+
+    h5 {
+      font-weight: 400;
+      margin-top: 0;
+      margin-bottom: 20px;
+      color: #7C4585;
+    }
+
+    .stickers-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      margin: 10px;
+      padding: 10px;
+      border-radius: 5px;
+      background-color: white;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      transition: box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .card input[type="number"] {
+      padding: 8px;
+      margin-top: 10px;
+      border: 1px solid #077A7D;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+
+    .sticker {
+      width: 300px;
+      height: auto;
+    }
+
+    .msg {
+      margin-top: 20px;
+      font-size: 18px;
+    }
+
+    #btnVerify {
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 16px;
+      color: white;
+      background-color: #077A7D;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  
+  <div class="container">
+    <h1>Contar Stickers</h1>
+    <h5>Puedes llevar hasta <strong>10</strong> Stickers en total</h5>
+
+    <div class="stickers-container">
+
+      <div class="card">
+        <img src="./stickers/playstation.png" alt="logo-sticker" class="sticker">
+        <input class="inputQty" type="number" name="input1" min="0">
+      </div>
+
+      <div class="card">
+        <img src="./stickers/nintendo.png" alt="logo-sticker" class="sticker">
+        <input class="inputQty" type="number" name="input2" min="0">
+      </div>
+
+      <div class="card">
+        <img src="./stickers/xbox.png" alt="logo-sticker" class="sticker">
+        <input class="inputQty" type="number" name="input3" min="0">
+      </div>
+
+    </div>
+
+    <div class="msg"></div>
+    <button id="btnVerify"> Verificar Cantidad </button>
+
+  </div>
+
+  <script src="./stickers.js"></script>
+</body>
+</html>
